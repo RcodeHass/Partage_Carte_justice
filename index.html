@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte point de justices</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="assets/cluster_dist/MarkerCluster.css"/>
+    <link rel="stylesheet" href="assets/cluster_dist/MarkerCluster.Default.css"/>
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+
+<body>
+    <!-- <h1 class="ma_classe">Carte Point de Justice</h1> -->
+    <div id="container">
+        <div id="head-map" class="center"> Entete de la carte
+        </div>
+        <div id="elm-map-container">
+            <div id="map"></div>
+            <div id="recherche" class="center">
+                recherche
+                <button id="button-recherche">recherche</button>
+            </div>
+            <dialog id="itineraire" class="body-dialog ">
+                <div>itineraire
+                    <li> Du plus proche</li>
+                    <li> Au plus loin</li>
+                    <li> Avec 5 ou 6 lieux</li>
+                </div>
+            </dialog>
+
+            <!-- Onglet latéral info -->
+            <dialog id="info" class="body-dialog">
+                <div class="head-dialog">
+                    <button id="dev-descrition" class="dev-button">_</button>
+                    <button id="close-dialog" class="close-button"> x</button>
+                </div>
+                <div id="head-info">
+                    head-info
+                    <div>
+                        Description générale le le type de point de juste, 
+                    </div>
+                </div>
+                <div id="switch-info" class="center">
+                    <button id="button-text" class="button-info"> info</button>
+                    <button id="button-stat" class="button-info"> stat</button>
+                </div>
+                <div id="contenue-info" class="center">
+                    <dialog id="text-info" class="view-info" open="true">
+                        texte
+                        <div> information detailler sur le point de justice : adresse numèros le gérant etc... </div>
+                    </dialog>
+                    <dialog id="stat-info" class="view-info ">stat
+                        <div id="teste"></div>
+                        <div>
+                            information statistique agrégé au niveaux des commune ou autre sur l'accessibilité et les besoin ou non en point de justice
+                        </div>
+                    </dialog>
+                </div>
+
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Onglet latéral -->
+    <!-- <dialog id="view-list" class="body-dialog" open>
+
+    </dialog>
+     -->
+    
+</body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/cluster_dist/leaflet.markercluster.js"></script>
+
+<script src="assets/data/point_justice.js"></script>
+<script src="script.js"></script>
+<!-- <script src="fonction_secondaire.js"></script> -->
+
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+   
+}
+
+#container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    display: inline;
+}
+
+#head-map {
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    background-color: rgb(187, 205, 231);
+    font-size: 2rem;
+    z-index: 2;
+}
+
+#elm-map-container {
+    position: relative;
+    height: calc(100% - 5%);
+    width: 100%;
+}
+
+#map {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+#recherche {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    height: 5vh;
+    width: 20vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 2;
+    padding: 5px;
+}
+
+#itineraire {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    height: 15vh;
+    width: 25vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#info {
+    position: absolute;
+    top: 80px;
+    left: calc(100% - 31%);
+    height: calc(100% - 12%);
+    width: 30%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#head-info {
+    background-color: rosybrown;
+    height: 20%;
+}
+
+#switch-info {
+    height: 10%;
+    background-color: rgb(204, 204, 204);
+}
+
+.button-info {
+    width: 48%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#contenue-info {
+    height: 66%;
+    background-color: rgb(192, 85, 85);
+    padding: 2px;
+}
+
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.body-dialog {
+    background-color: rgb(219, 238, 243);
+    padding: 0px;
+    padding-top: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999; 
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.head-dialog{
+    position: absolute;
+    top: 0px;
+    background: rgba(98, 211, 231, 0.411);
+    width: 100%;
+    position: sticky;
+    z-index: 9999;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+.close-button{
+    background-color: rgb(255, 81, 0);
+    color:azure;
+    border: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 18px;
+    margin-right: 5px;
+}
+
+#text-info {
+    background-color: rgb(170, 112, 24);
+}
+#stat-info {
+    background-color: rgb(24, 170, 80);
+}
+
+.view-info {
+    position: relative;
+    height: 99%;
+    width: 99%;
+    background-color: rgb(24, 170, 80);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+#teste {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(170, 107, 24);
+    border-radius: 50%;
+}
